@@ -24,9 +24,7 @@ open class LinearProgressBar: UIView {
     /// Padding on the track on the progress bar
     @IBInspectable public var trackPadding: CGFloat = 6 {
         didSet {
-            if trackPadding < 0 {
-                trackPadding = 0
-            }else if trackPadding > barThickness {
+            if trackPadding > barThickness {
                 trackPadding = 0
             }
         }
